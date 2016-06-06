@@ -1,0 +1,12 @@
+name: Oracle Siebel CRM
+description: |
+  Oracle Siebel CRM stack includes components: |
+  * Oracle DB 12c1 |
+  * Siebel Gateway |
+  * Siebel Server |
+  * Siebel Web Server
+version: 0.1
+category: siebel
+maintainer: Alexaner Shepel
+license: # The license
+projectURL: # A URL related to the catalog entry

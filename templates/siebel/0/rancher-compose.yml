@@ -1,0 +1,20 @@
+.catalog
+  name: Oracle Siebel CRM
+  version: 0.1
+  description: |
+    Oracle Siebel CRM stack includes components: |
+    * Oracle DB 12c1 |
+    * Siebel Gateway |
+    * Siebel Server |
+    * Siebel Web Server
+  uuid: siebel-0
+  minimum_rancher_version: 1.1.0
+  questions: #Used to request user input for configuration options
+siebel-db:
+  scale: 1
+siebel-gateway:
+  scale: 1
+siebel-server:
+  scale: 1
+siebel-web:
+  scale: 1

@@ -1,0 +1,8 @@
+siebel-db:
+  scale: 1
+siebel-gateway:
+  scale: 1
+siebel-server:
+  scale: 1
+siebel-web:
+  scale: 1
