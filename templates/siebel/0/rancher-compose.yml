@@ -43,3 +43,12 @@ siebel-server:
     response_timeout: 2000
 siebel-web:
   scale: 1
+  health_check:
+    port: 80
+    interval: 2000
+    initializing_timeout: 600000
+    unhealthy_threshold: 3
+    strategy: none
+    request_line: GET "/fins_enu" "HTTP/1.0"
+    healthy_threshold: 2
+    response_timeout: 2000
