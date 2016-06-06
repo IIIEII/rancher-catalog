@@ -1,12 +1,14 @@
 siebel-db:
   ports:
-  - 1521:1521/tcp
+  - 1521/tcp
   image: 192.168.99.1:5000/oracle-12c1:clonedb
   volumes:
   - oracle-backup:/oracle/backup
   - /oracle/conf
   volume_driver: convoy-nfs
 siebel-gateway:
+  ports:
+  - 2320/tcp
   environment:
     COMMAND: rungateway
     SIEBEL_CONF: /siebel/conf
@@ -31,7 +33,7 @@ siebel-server:
   volume_driver: convoy-nfs
 siebel-web:
   ports:
-  - 80:80/tcp
+  - 80/tcp
   environment:
     COMMAND: runwebserver
     SIEBEL_CONF: /siebel/conf
