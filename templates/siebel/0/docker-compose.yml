@@ -2,7 +2,7 @@ siebel-db:
   image: 192.168.99.1:5000/oracle-12c1:clonedb
   volumes:
   - oracle-backup:/oracle/backup
-  - /oracle/conf
+  # - /oracle/conf
   volume_driver: convoy-nfs
 siebel-gateway:
   environment:
