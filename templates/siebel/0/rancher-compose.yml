@@ -1,22 +1,15 @@
 .catalog:
-  name: "Convoy NFS"
+  name: "Oracle Siebel CRM"
   version: "v0.1"
-  description: "Convoy NFS - Docker volume plugin"
+  description: "Oracle Siebel CRM applications stack"
   questions:
-  - variable: "NFS_SERVER"
-    description: "IP or hostname of the NFS Server"
-    label: "NFS Server"
+  - variable: "SIEBEL_VERSION"
+    description: "Siebel Version"
+    label: "Siebel Version"
     required: true
-    type: "string"
-  - variable: "MOUNT_DIR"
-    label: "Mount Directory"
-    description: "The directory on the NFS server to mount"
-    type: "string"
-    required: true
-  - variable: "MOUNT_OPTS"
-    label: "Mount Options"
-    description: "Comma delimited list of mount options, for example: 'nfsvers=4,proto=udp'"
-    type: "string"
+    type: "enum"
+    options:
+      - "15.7"
 
 siebel-db:
   scale: 1
