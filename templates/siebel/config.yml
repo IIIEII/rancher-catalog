@@ -1,8 +1,5 @@
-name: Oracle Siebel CRM
+name: Convoy NFS
 description: |
-  Oracle Siebel CRM applications stack
-version: 0.1
-category: siebel
-maintainer: Alexaner Shepel
-license: # The license
-projectURL: # A URL related to the catalog entry
+  Docker Volume Manager for NFS-backed Volumes
+version: v0.3.0
+category: Rancher Services
