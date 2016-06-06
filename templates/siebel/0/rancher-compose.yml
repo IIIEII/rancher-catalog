@@ -1,11 +1,10 @@
 .catalog
-  name: Oracle Siebel CRM
-  version: 0.1
-  description: |
-    Oracle Siebel CRM applications stack
-  uuid: siebel-0
-  minimum_rancher_version: 1.1.0
+  name: "Oracle Siebel CRM"
+  version: "v0.1"
+  description: "Oracle Siebel CRM applications stack"
+  uuid: "siebel-0"
   questions: #Used to request user input for configuration options
+  
 siebel-db:
   scale: 1
 siebel-gateway:
