@@ -23,6 +23,14 @@ siebel-db:
     response_timeout: 2000
 siebel-gateway:
   scale: 1
+  health_check:
+    port: 2320
+    interval: 2000
+    initializing_timeout: 600000
+    unhealthy_threshold: 3
+    strategy: none
+    healthy_threshold: 2
+    response_timeout: 2000
 siebel-server:
   scale: 1
 siebel-web:
